@@ -4,11 +4,11 @@ Environment for debug of Golang compiler
 ## Build and Run
 
 ```
-# build 
+#build 
 
 $ docker run -t goenv:latest .
 
-# run and into container
+#run and into container
 
 $ docker run -it --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" goenv:latest /bin/zsh
 ```
@@ -20,8 +20,9 @@ Needs
 - go1.4
 - golang:latest
 
-1.gcc use build go1.4
-2.go1.4 use build golang:latest
+
+- 1.gcc use build go1.4
+- 2.go1.4 use build golang:latest
 
 ### Into Container
 
