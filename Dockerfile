@@ -17,7 +17,7 @@ RUN yum update -y && yum install -y epel-release \
 # Firstcompiler Dir for go1.4, goEnv Dir for debuging of golang:latest, WorkDir is used for place of sample source 
 RUN mkdir /root/FirstCompiler && mkdir /root/goEnv && mkdir /root/WorkDir
 
-COPY ./Greeting.go /root/WorkDir/
+COPY ./src /root/WorkDir/
 
 # Get go1.4 for compile golang:latest
 RUN wget https://dl.google.com/go/go1.4.linux-amd64.tar.gz && tar -xzf go1.4.linux-amd64.tar.gz && mv go go1.4
