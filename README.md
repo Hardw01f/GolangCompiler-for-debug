@@ -6,11 +6,11 @@ Environment for debug of Golang compiler
 ```
 #build 
 
-$ docker run -t goenv:latest .
+$ docker run -t go_debug:latest .
 
 #run and into container
 
-$ docker run -it --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" goenv:latest /bin/zsh
+$ docker run -it --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" go_debug:latest /bin/zsh
 ```
 
 ### Plot of install Golang
